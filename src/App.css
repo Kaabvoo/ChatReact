@@ -1,0 +1,21 @@
+body{
+  background-color: black;
+}
+
+.SonArea{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  height: 550px;
+}
+
+input{
+  margin: 5px 10px;
+  width: 50%;
+  font-family: monospace;
+  background-color: black;
+  border-color: green;
+  box-shadow: 0px 0px 10px green;
+  color: green;
+  z-index: 20;
+}
