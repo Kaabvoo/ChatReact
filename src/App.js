@@ -21,8 +21,8 @@ class App extends Component {
   }
 
   componentWillMount(){
-    // var sec = setInterval(this.checSkUpdates, 1000);
-    // this.setState({segun: sec});
+    var sec = setInterval(this.checkUpdates, 1000);
+    this.setState({segun: sec});
   }
 
   componentWillUnmount(){
@@ -40,7 +40,7 @@ class App extends Component {
   }
   
   componentDidUpdate(){
-    this.inputMsg.focus();
+    // this.inputMsg.focus();
   }
 
   changeName(i){
@@ -48,7 +48,7 @@ class App extends Component {
       ppl: i,
       showM: false,
     })
-    linker.man = this.state.ppl;
+    linker.man = i;
   }
 
   subM(e) {
@@ -75,7 +75,7 @@ class App extends Component {
         <form onSubmit={this.subM}>
           <input ref={ref => this.inputMsg = ref} type="text" name="SMS" placeholder="SMS"/>
         </form>
-        <button onClick={this.checkUpdates} >Updatear</button>
+        {/* <button onClick={this.checkUpdates} >Updatear</button> */}
       </div>
     );
   }
