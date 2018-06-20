@@ -1,12 +1,12 @@
 div.mine{
     display: flex;
-    justify-content: right;
+    justify-content: flex-end;
     text-shadow: 0px 0px 15px greenyellow;
 }
 
 div.else{
     display: flex;
-    justify-content: left;
+    justify-content: flex-start;
 }
 
 div.mine, div.else{
