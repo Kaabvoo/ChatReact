@@ -21,8 +21,8 @@ class App extends Component {
   }
 
   componentWillMount(){
-    var sec = setInterval(this.checkUpdates, 1000);
-    this.setState({segun: sec});
+    // var sec = setInterval(this.checkUpdates, 1000);
+    // this.setState({segun: sec});
   }
 
   componentWillUnmount(){
